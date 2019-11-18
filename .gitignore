@@ -3,4 +3,5 @@
 # information for Eclipse / Flash Builder.
 
 node_modules
+gulpfile.js
 

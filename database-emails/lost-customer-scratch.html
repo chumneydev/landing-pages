@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lost Customer</title>
+    <link rel="stylesheet" href="https://www.theautohost.com/_assets/coding/cagriddle/css/cagriddle.min.css">
+    <link rel="stylesheet" type="text/css" href="bundle/dist/css/lp.css" />
+</head>
+
+<body class="scratch">
+
+    <div id="container scratch">
+
+        <div id="main" class="lost-customer scratch">
+            <div id="header">
+                <img src="./bundle/images/logo.png" alt="ABC Motors" />
+            </div>
+
+
+        <div class="video">
+                <video controls>
+                    <source
+                        src="https://theautohost.com/_clients/CHMO/pages/CHMO68283-emaildatabase/bundle/images/video-sufo.mp4"
+                        type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+        </div>
+
+
+
+            <div id="contact">
+                <div id="scratch">
+                    <img src="./bundle/images/scratchoff-bottom-new.jpg" alt="scratch" />
+
+                </div>
+
+
+                <h3>CALL US AT <span>888-888-8888</span></h3>
+                <h3>OR FILL OUT THE FORM BELOW</h3>
+
+                <div class="cacontainer">
+                    <div class="carow">
+                        <div class="ca-12">
+                            <form method="post" action="">
+
+                                <div class="carow">
+                                    <div class="ca-12">
+                                        <input type="text" name="fullname" id="fullname" required
+                                            placeholder="Full Name">
+                                    </div>
+                                </div>
+
+                                <div class="carow">
+                                    <div class="ca-12">
+                                        <input type="text" name="fullname" id="fullname" required
+                                            placeholder="Email Address">
+                                    </div>
+                                </div>
+                                <div class="carow">
+                                    <div class="ca-12">
+                                        <input type="text" name="fullname" id="fullname" required
+                                            placeholder="Phone Number">
+                                    </div>
+                                </div>
+                                <div class="carow">
+                                    <div class="ca-6">
+                                        <input type="text" name="fullname" id="fullname" required
+                                            placeholder="Current Vehicle">
+                                    </div>
+                                    <div class="ca-6">
+                                        <input type="text" name="fullname" id="fullname" required
+                                            placeholder="Amount Owed">
+                                    </div>
+                                </div>
+
+                                <div class="carow">
+                                    <div class="ca-6">
+                                        <input type="text" name="fullname" id="fullname" required
+                                            placeholder="Desired Vehicle">
+                                    </div>
+                                    <div class="ca-6">
+                                        <input type="text" name="fullname" id="fullname" required
+                                            placeholder="Desired Payment">
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+  
+
+                    <button type="submit" id="submit" name="submit" class="btn">Yes Save Me Money!</button>
+                </form>
+
+            </div>
+
+        </div>
+
+        <div id="copy">
+
+        <p>Scratch off the amount to reveal what you receive just for taking a test drive!</p>
+
+<p>
+You are invited to our Owner Loyalty Sales Event. You can save THOUSANDS by taking advantage of this sale and as a
+recipient of this letter your credit has been virtually pre-approved.
+</p>
+
+<p>
+We will be offering significant savings available on select new vehicles. Additionally, we have an amazing selection of
+locally owned and low mileage cars, trucks, vans, SUVs and hybrids that we will be drastically discounted during our
+event.
+
+</p>   
+<p>
+Based on my knowledge of your file, I see it's been a while since we've last seen you. I wanted to take the opportunity
+to re-introduce our family to yours by offering a Gift Card for test driving any vehicle of your choice. Make sure you
+"scratch off" and reveal the amount you’ll receive!
+
+</p>    
+<p>
+This opportunity is time-sensitive and exclusive to you. Appointments are strongly encouraged- call 1-888-867-5309
+before close of business 6:01 PM Saturday, September 28, 2019. Be sure to bring this invitation with you.
+
+</p>           </div>
+
+
+
+
+
+    </div>
+
+
+    <div id="footer">
+
+
+<div id="ca-copywrite" class="carow">
+    <div class="ca-6 ca-offset-2">
+        <a href="https://www.chumneyads.com/services/website-management/custom-vehicle-content-pages/"
+            target="_top"><img src="https://www.theautohost.com/_assets/coding/copywrite/powered-by-ca.png"
+                alt="Powered By Chumney & Associates" /></a>
+        <div class="ca-copywrite">
+            <iframe src="https://www.theautohost.com/_assets/coding/copywrite/copywrite-new.html" width="100%"
+                height="100%" border="0" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
+
+
+
+
+    </div>
+
+
+    <script src="./bundle/dist/js/jquery.js"></script>
+    <script src="./bundle/dist/js/submit.js"></script>
+    <script src="./bundle/dist/js/iziToast.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="./bundle/dist/js/ScratchIt.min.js"></script>
+
+    </body>
+    <script type="text/javascript">
+        var containerEl = document.getElementById('scratch'),
+            overlayImgUrl =
+            'https://theautohost.com/_clients/CHMO/pages/CHMO68283-emaildatabase/bundle/images/scratchoff-top2.jpg',
+            brushImgUrl =
+            'https://theautohost.com/_clients/CHMO/pages/CHMO68283-emaildatabase/bundle/images/brush1.png',
+            revealPercent = 50;
+
+        // event handler that fades out the overlay once 50% of it has been removed
+        function onReveal() {
+            containerEl.className += ' revealed';
+
+            if (window.navigator.userAgent.indexOf("Edge") > -1) {
+                document.getElementsByTagName('canvas')[0].style.width = '100%';
+            }
+        }
+
+        if (ScratchIt.isSupported()) {
+            ScratchIt(containerEl, overlayImgUrl, brushImgUrl, onReveal, revealPercent);
+        }
+    </script>
+
+    </html>

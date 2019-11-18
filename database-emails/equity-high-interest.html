@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Equity High Interest</title>
+    <link rel="stylesheet" href="https://www.theautohost.com/_assets/coding/cagriddle/css/cagriddle.min.css">
+    <link rel="stylesheet" type="text/css" href="bundle/dist/css/lp.css" />
+</head>
+
+<body>
+
+    <div id="container" class="scratch">
+
+        <div id="main" class="equity-high-interest">
+            <div id="header">
+                <img src="./bundle/images/logo.png" alt="ABC Motors" />
+            </div>
+
+            <div class="video">
+                <img src="./bundle/images/video.jpg" />
+            </div>
+
+
+
+            <div id="contact">
+                <div id="scratch">
+                    <img src="./bundle/images/scratchoff-bottom-new.jpg" alt="scratch" />
+
+                </div>
+
+                <h3>CALL US AT <span>888-888-8888</span></h3>
+                <h3>OR FILL OUT THE FORM BELOW</h3>
+
+                <div class="cacontainer">
+                    <div class="carow">
+                        <div class="ca-12">
+                            <form method="post" action="">
+
+                                <div class="carow">
+                                    <div class="ca-12">
+                                        <input type="text" name="fullname" id="fullname" required
+                                            placeholder="Full Name">
+                                    </div>
+                                </div>
+
+                                <div class="carow">
+                                    <div class="ca-12">
+                                        <input type="text" name="fullname" id="fullname" required
+                                            placeholder="Email Address">
+                                    </div>
+                                </div>
+                                <div class="carow">
+                                    <div class="ca-12">
+                                        <input type="text" name="fullname" id="fullname" required
+                                            placeholder="Phone Number">
+                                    </div>
+                                </div>
+                                <div class="carow">
+                                    <div class="ca-6">
+                                        <input type="text" name="fullname" id="fullname" required
+                                            placeholder="Current Vehicle">
+                                    </div>
+                                    <div class="ca-6">
+                                        <input type="text" name="fullname" id="fullname" required
+                                            placeholder="Amount Owed">
+                                    </div>
+                                </div>
+
+                                <div class="carow">
+                                    <div class="ca-6">
+                                        <input type="text" name="fullname" id="fullname" required
+                                            placeholder="Desired Vehicle">
+                                    </div>
+                                    <div class="ca-6">
+                                        <input type="text" name="fullname" id="fullname" required
+                                            placeholder="Desired Payment">
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+                    <button type="submit" id="submit" name="submit" class="btn">Yes Save Me Money!</button>
+                </form>
+
+            </div>
+
+        </div>
+
+        <div id="copy">
+            <h1>Take the Next Step and Get an Exclusive Offer!</h1>
+
+            <p>Congratulations! You’ve taken the first step toward saving THOUSANDS of dollars on your next vehicle! We’ve explained that we’re prepared to save you money on your next auto purchase – in addition to offering you TOP DOLLAR for your trade – but just to sweeten the deal for you, scratch off the box on this page to reveal your exclusive offer.</p>
+
+            <p>Whether you buy from us or not, my goal is to give you the highest possible amount for your vehicle trade. However, I have to see it in person in order to claim over market value on it. Call me or click the button to take the next step in the vehicle purchase process and schedule your appointment to value your trade! </p>
+            <p>And don’t forget to scratch off your exclusive offer!</p>
+
+            <p>Remember, this opportunity is time-sensitive, and we don’t want you to miss it. We can’t wait to work with you to make your trade-in/buying experience fast, easy, and stress-free!</p>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <div id="footer">
+
+
+<div id="ca-copywrite" class="carow">
+    <div class="ca-6 ca-offset-2">
+        <a href="https://www.chumneyads.com/services/website-management/custom-vehicle-content-pages/"
+            target="_top"><img src="https://www.theautohost.com/_assets/coding/copywrite/powered-by-ca.png"
+                alt="Powered By Chumney & Associates" /></a>
+        <div class="ca-copywrite">
+            <iframe src="https://www.theautohost.com/_assets/coding/copywrite/copywrite-new.html" width="100%"
+                height="100%" border="0" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
+
+
+
+
+    </div>
+
+
+    <script src="./bundle/dist/js/jquery.js"></script>
+    <script src="./bundle/dist/js/submit.js"></script>
+    <script src="./bundle/dist/js/iziToast.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="./bundle/dist/js/ScratchIt.min.js"></script>
+
+    </body>
+    <script type="text/javascript">
+        var containerEl = document.getElementById('scratch'),
+            overlayImgUrl =
+            'https://theautohost.com/_clients/CHMO/pages/CHMO68283-emaildatabase/bundle/images/scratchoff-top2.jpg',
+            brushImgUrl =
+            'https://theautohost.com/_clients/CHMO/pages/CHMO68283-emaildatabase/bundle/images/brush1.png',
+            revealPercent = 50;
+
+        // event handler that fades out the overlay once 50% of it has been removed
+        function onReveal() {
+            containerEl.className += ' revealed';
+
+            if (window.navigator.userAgent.indexOf("Edge") > -1) {
+                document.getElementsByTagName('canvas')[0].style.width = '100%';
+            }
+        }
+
+        if (ScratchIt.isSupported()) {
+            ScratchIt(containerEl, overlayImgUrl, brushImgUrl, onReveal, revealPercent);
+        }
+    </script>
+
+    </html>
